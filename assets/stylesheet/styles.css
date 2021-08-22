@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+html{
+    font-size: 16px;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* -------------------custome styles---------- */
+
+@media screen and (max-width : 908px) {
+    html{
+        font-size: 20px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .flex{
+        display: flex;
+    }
+    .align_items{
+        align-items: center;
+    }
+    .justify_between{
+        justify-content: space-between;
+    }
+    .justy_flexstart{
+        justify-content: flex-start;
+    }
+    .full_width{
+        width: 100%;
+        margin: 0.6rem 0;
+    }
+    a{
+        color: black;
+    }
+    .container{
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        margin-top: 1rem;
+    } 
+    .container_img{
+        max-width: 100%;
+        width: 100%;
+    }
+    .section_container{
+        margin: 0 0.8rem;
+    }
+    .header{
+        position: fixed;
+        width: 97%;
+        background-color: white;
+        top: 0;
+        padding:0.2rem 0.8rem ;
+        margin: auto;
+        box-shadow: -3px -3px 3px rgba(255,255,255,0.5),
+                    1px 1px 3px rgba(0,0,0,0.4)
+    }
+    .header img{
+        width: 100px;
+    }
+    .header a{
+        font-size: 1.5rem;
+        color: black;
+    }
+    /* .nav .lottie_player{
+        position: absolute;
+        right: 0;
+        top: 0px;
+        width: 100px;
+        height: 100px;
+        transform: scaleX(-1);
+    } */
+    /* ------------------------ */
+    .each_article{
+        margin-bottom: 3rem;
+    }
+    .section .rounded_ids{
+        width: 45px;
+        height: 45px;
+        margin-top: 5rem;
+        border-radius: 50%;
+        padding: 0.3rem;
+    }
+    .section .ids .border_red{
+        border: 1.5px dotted red;
+        
+    }
+    .ids{
+        text-align: center;
+    }
+    .section .last_article{
+        margin-bottom: 5rem;
+    }
+   
+    .each_article #menu{
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.705);
+    }
+    .each_article .idName{
+        font-size: 1rem;
+        font-weight: 900;
+    }
+    .each_article .left_side .round_idimage{
+        width: 3rem;
+        height: 3rem;
+        margin-right: 0.5rem;
+        border: 1px dotted red;
+        border-radius: 50%;
+        padding: 0.25rem;
+    }
+    .each_article footer li{
+        font-size: 1.5rem;
+    }
+    .each_article footer .left li{
+        margin-right: 1.3rem;
+    }
+    .details{
+        margin-top: 1rem;
+    }
+    .details strong{
+        font-weight: 900;
+    }
+    .details .lighter{
+        font-weight: lighter;
+        color: grey;
+    }
+    .details .hours{
+        margin-top: 0.7rem;
+        font-size: 0.75rem;
+    }
+    .each_article .details .views_ratings{
+        margin-top: 0.5rem;
+    }
+     .bookmark{
+        color: brown;
+        font-size: 1.8rem;
+    }
+    .container_halfimg{
+        width: 100%;
+    }
+    /* --------------------------footer */
+    .footer{
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        background-color: white;
+        box-shadow: -3px -3px 3px rgba(255,255,255,0.5),
+        1px 1px 3px rgba(0,0,0,1);
+        padding: 0.3rem 0;
+    }
+    .footer img{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border: 1px dotted red;
+        padding: 0.3rem;
+    }
+    .footer  i{
+        font-size: 1.3rem;
+    }
+    .footer #big_play{
+        font-size: 2rem;
+    }
+
+    /* ----------------------------------------- */
+    .list_images{
+        margin: 4.5rem 0;
+    }
+    .fifty{
+        width: 49.8%;
+    }
+    /* .lottie_file{
+        width: 150px;
+        position: absolute;
+        height: 150px;
+        margin-left: 23%;
+        bottom: 1.5rem;
+        display: none;
+    }
+    .bookmark:hover .lottie_file{
+        display: block;
+    } */
+
+    .input_section{
+        margin-top: 5rem;
+    }
+    .input{
+        position: fixed;
+        background-color: white;
+        top: 4.5rem;
+        width: 100%;
+        margin: auto;
+        border: 1px solid rgba(0, 0, 0, 0.342);
+        height: 2.9rem;
+        border-radius: 10px;
+    }
+    .input input{
+        border: none;
+        width: 90%;
+        height: 2.1rem;
+        padding-left: 0.8rem;
+        letter-spacing: 1.5px;
+        border-radius: 10px;
+
+    }
+    .input input:focus{
+        outline: none;
+    }
+    .container_onebythree{
+        width: 33%;
+        height: 14rem;
+        margin-top: 3px;
+    }
+     .hundred{
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 8rem;
+    }
+}
+
+
+@media screen and (max-width: 415px) {
+    html{
+        font-size: 12px;
+    }
+    .header{
+        width: 95%;
+    }
+}
